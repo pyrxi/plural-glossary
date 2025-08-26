@@ -1,6 +1,74 @@
-* {
-    font-family: "PTSerif", serif;
+/* Base CSS */
+
+:root {
+    --background-color: #DCCFE8;
+    --text-color: #0B090C;
+    --link-color: #2427E2;
+    --link-hover: #6E3686;
+    --link-clicked: #FF0F53;
 }
+
+body {
+    font-family: "PTSerif", serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+
+/* Base link colors */
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--link-color);
+}
+
+a:visited:hover {
+    color: var(--link-hover);
+}
+
+a:link:active, :visited:active {
+    color: var(--link-clicked);
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header h1 a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header h1 a:hover {
+    text-decoration: none;
+    color: var(--link-hover);
+}
+
+.header h1 a:link:active, :visited:active {
+    color: var(--link-clicked);
+}
+
+/* Navigation bar */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+/* Fonts */
 
 @font-face {
     font-family: "PTSerif";
